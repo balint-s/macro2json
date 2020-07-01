@@ -16,7 +16,7 @@ def get_lines(file_name):
             yield line
 
 def get_macro_key_value(line):
-    m = re.search('^#define\s+(?P<key>\w+)\s+"?(?P<value>[\w\.,]+)"?', line);
+    m = re.search('^#define\s+(?P<key>\w+)\s+"?(?P<value>[\w\.,%]+)"?', line);
     if m is None:
         return (None, None)
     return (m.group('key'), m.group('value'));
