@@ -4,4 +4,6 @@
 
 // comment here
 
+#define WITH_QUOTES "hello"
+
 #define LAST    3
